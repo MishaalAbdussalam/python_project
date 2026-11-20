@@ -1,7 +1,9 @@
 # Python Data Analytics Projects
 
-Python projects focused on Data Cleaning and Exploratory Data Analysis (EDA), using Pandas and other Python libraries.
-These projects demonstrate practical applications of Python libraries to prepare and clean datasets, explore information, identify patterns, and extract insights.
+This project focuses on cleaning and preparing a customer call list dataset using Python and Pandas.
+
+The dataset contains customer information, including names, phone numbers, addresses, payment status, and contact preferences.
+The primary objective was to identify and address data quality issues, remove unnecessary information, standardise inconsistent values, and prepare the dataset for use in a customer contact list.
 
 ## Projects
 
@@ -10,14 +12,36 @@ These projects demonstrate practical applications of Python libraries to prepare
 **Dataset:** Customer Call List.xlsx
 
 **Objective:**
- Clean and transform a raw customer dataset by identifying inconsistencies, handling missing information, removing unnecessary data, and preparing the dataset for further use.
+- Identify and remove duplicate records.
+- Remove unnecessary columns
+- Clean and standardise customer names.
+- Standardise phone number formatting.
+- Separate address information into individual columns.
+- Standardise customer payment and contact preference values.
+- Remove customers who should not be contacted.
+- Handle missing values and validate the final dataset.
 
-**Key Areas Covered:**
-- Data inspection and exploration.
-- Handling missing and duplicate values.
-- Removing unnecessary information.
-- Standardising and formatting data.
-- Preparing datasets for analysis.
+**Final Data Validation:**
+
+Performed final checks to assess the quality and structure of the cleaned dataset using:
+- df.info() - To get a high level overview of the dataframe.
+- df.isnull().sum() - To find out if there are any null values in any columns. Empty strings are not counted as null values in this operation.
+- df.duplicated().sum() - To find out if there are any duplicated records.
+- df.shape - For the number of rows and columns.
+
+**Key Learnings:**
+
+Through this project, I gained practical experience in:
+
+- Importing Excel datasets into Python.
+- Using Pandas for data manipulation.
+- Identifying and handling duplicate records.
+- Cleaning inconsistent text values.
+- Standardising phone number formats.
+- Splitting and transforming columns.
+- Handling missing values.
+- Filtering records based on business requirements.
+- Validating the quality of a cleaned dataset.
 
 **Tools:** Python, Pandas, Jupyter Notebook.
 
